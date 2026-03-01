@@ -17,6 +17,6 @@ public class Main {
 
         FileProcessor.generateOutput("output.csv", billingService.getCustomers());
 
-        System.out.println("Processing completed. Check output.csv"); 
+        System.out.println("Processing completed. Check output.csv");
     }
 }
