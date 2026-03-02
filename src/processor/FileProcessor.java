@@ -12,7 +12,7 @@ public class FileProcessor {
         Map<String, Service> services = new HashMap<>();
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line;
-        br.readLine(); // skip header
+        br.readLine();
         while ((line = br.readLine()) != null) {
             String[] parts = line.split(",");
             if ("SERVICE".equals(parts[0])) {
@@ -27,7 +27,7 @@ public class FileProcessor {
         Map<String, CreditPackage> packages = new HashMap<>();
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line;
-        br.readLine(); // skip header
+        br.readLine();
         while ((line = br.readLine()) != null) {
             String[] parts = line.split(",");
             if ("PACKAGE".equals(parts[0])) {
